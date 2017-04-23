@@ -6,7 +6,7 @@
 
 **BouncyLayout** is a collection view layout that makes your cells bounce.
 
-![](art/gifs/messages.gif)![](art/gifs/graph.gif)![](art/gifs/photos.gif)
+![](art/gifs/messages.gif)![](art/gifs/photos.gif)![](art/gifs/graph.gif)
 
 ## Features
 
