@@ -15,7 +15,7 @@
 - [X] Horizontal and vertical scrolling support.
 
 ## Setup
-The only you thing you need to do is import `BouncyLayout` and add it to your `UICollectionView`.
+The only you thing you need to do is import `BouncyLayout`, create an instance and add it to your `UICollectionView`.
 ```swift
 import BouncyLayout
 ```
@@ -23,7 +23,7 @@ import BouncyLayout
 UICollectionView(frame: .zero, collectionViewLayout: BouncyLayout())
 ```
 
-##### Find the above displayed examples in the `examples` folder.
+##### Find the above displayed examples in the `example` folder.
 
 ## Installation
 
