@@ -3,7 +3,7 @@ import BouncyLayout
 
 class ViewController: UIViewController {
     
-    let numberOfItems = 150
+    let numberOfItems = 100
     var randomCellStyle: CellStyle { return arc4random_uniform(10) % 2 == 0 ? .blue : .gray }
     var randomFloat: CGFloat { return max(45, CGFloat(arc4random_uniform(100))) }
     
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         switch example {
         case .chatMessage: return UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0)
         case .photosCollection: return UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
-        case .barGraph: return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -10)
+        case .barGraph: return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
         }
     }
     
@@ -75,9 +75,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
+        view.clipsToBounds = true
         
         collectionView.contentInset = UIEdgeInsets(top: insets.top + additionalInsets.top, left: insets.left + additionalInsets.left, bottom: insets.bottom + additionalInsets.bottom, right: insets.right + additionalInsets.right)
-        collectionView.scrollIndicatorInsets = UIEdgeInsets(top: insets.top, left: 0, bottom: insets.bottom, right: 0)
+        collectionView.scrollIndicatorInsets = UIEdgeInsets(top: insets.top, left: insets.left, bottom: insets.bottom, right: insets.right)
         view.addSubview(collectionView)
         
         NSLayoutConstraint.activate([
