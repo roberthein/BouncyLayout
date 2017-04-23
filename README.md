@@ -20,7 +20,10 @@ The only you thing you need to do is import `BouncyLayout`, create an instance a
 import BouncyLayout
 ```
 ```swift
-UICollectionView(frame: .zero, collectionViewLayout: BouncyLayout())
+let layout = BouncyLayout()
+```
+```swift
+UICollectionView(frame: .zero, collectionViewLayout: layout)
 ```
 
 ##### Find the above displayed examples in the `example` folder.
