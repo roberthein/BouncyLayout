@@ -1,6 +1,4 @@
-<p align="center">
-    <img src="art/header.png" width="890" alt="TinyConstraints"/>
-</p>
+![](art/header.png)
 
 **tl;dr** *Make. It. Bounce.*
 
