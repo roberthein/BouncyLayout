@@ -37,6 +37,12 @@ it, simply add the following line to your Podfile:
 pod "BouncyLayout"
 ```
 
+Alternatively, if you're using [Carthage](https://github.com/Carthage/Carthage) add it to your Cartfile:
+
+```
+github "roberthein/BouncyLayout" ~> 1.0.1
+```
+
 ## Suggestions or feedback?
 
 Feel free to create a pull request, open an issue or find me [on Twitter](https://twitter.com/roberthein).
