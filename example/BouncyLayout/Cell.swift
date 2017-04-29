@@ -49,15 +49,6 @@ class Cell: UICollectionViewCell {
         return view
     }()
     
-    lazy var label: UILabel = {
-        let view = UILabel()
-        view.translatesAutoresizingMaskIntoConstraints = false
-//        view.layer.cornerRadius = 35 / 2
-//        view.clipsToBounds = true
-        
-        return view
-    }()
-    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -67,14 +58,8 @@ class Cell: UICollectionViewCell {
         
         contentView.backgroundColor = nil
         contentView.addSubview(background)
-        contentView.addSubview(label)
         
-        NSLayoutConstraint.activate([top, left, bottom, right,
-                                     label.topAnchor.constraint(equalTo: contentView.topAnchor),
-                                     label.leftAnchor.constraint(equalTo: contentView.leftAnchor),
-                                     label.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-                                     label.rightAnchor.constraint(equalTo: contentView.rightAnchor),
-                                     ])
+        NSLayoutConstraint.activate([top, left, bottom, right])
         
         
     }
