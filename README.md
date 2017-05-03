@@ -37,6 +37,15 @@ it, simply add the following line to your Podfile:
 pod "BouncyLayout"
 ```
 
+### Carthage
+
+BouncyLayout is available through [Carthage](https://github.com/Carthage/Carthage). To install
+it, simply add the following line to your Cartfile:
+
+```
+github "roberthein/BouncyLayout"
+```
+
 ## Suggestions or feedback?
 
 Feel free to create a pull request, open an issue or find me [on Twitter](https://twitter.com/roberthein).
