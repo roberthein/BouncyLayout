@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         return (0..<self.numberOfItems).map { _ in
             switch example {
             case .chatMessage: return CGSize(width: UIScreen.main.bounds.width - 20, height: self.randomFloat)
-            case .photosCollection: return CGSize(width: (UIScreen.main.bounds.width - (4 * 15)) / 3, height: (UIScreen.main.bounds.width - (4 * 15)) / 3)
+            case .photosCollection: return CGSize(width: floor((UIScreen.main.bounds.width - (4 * 15)) / 3), height: floor((UIScreen.main.bounds.width - (4 * 15)) / 3))
             case .barGraph: return CGSize(width: 45, height: 400)
             }
         }
