@@ -6,9 +6,7 @@ public class BouncyLayout: UICollectionViewFlowLayout {
     
     public override func prepare() {
         super.prepare()
-        guard let view = collectionView,
-            let attributes = super.layoutAttributesForElements(in: view.bounds)?
-                .flatMap({ $0.copy() as? UICollectionViewLayoutAttributes }) else { return }
+        guard let view = collectionView, let attributes = super.layoutAttributesForElements(in: view.bounds)?.flatMap({ $0.copy() as? UICollectionViewLayoutAttributes }) else { return }
         
         oldBehaviors(for: attributes).forEach(animator.removeBehavior(_:))
         newBehaviors(for: attributes).forEach {
@@ -20,25 +18,15 @@ public class BouncyLayout: UICollectionViewFlowLayout {
     
     private func oldBehaviors(for attributes: [UICollectionViewLayoutAttributes]) -> [UIAttachmentBehavior] {
         let indexPaths = attributes.map { $0.indexPath }
-        return animator.behaviors
-            .flatMap {
-                guard let behavior = $0 as? UIAttachmentBehavior,
-                    let itemAttributes = behavior.items.first as? UICollectionViewLayoutAttributes else { return nil }
-                return indexPaths.contains(itemAttributes.indexPath)
-                    ? nil
-                    : behavior
+        return animator.behaviors.flatMap {
+            guard let behavior = $0 as? UIAttachmentBehavior, let itemAttributes = behavior.items.first as? UICollectionViewLayoutAttributes else { return nil }
+            return indexPaths.contains(itemAttributes.indexPath) ? nil : behavior
         }
     }
     
     private func newBehaviors(for attributes: [UICollectionViewLayoutAttributes]) -> [UIAttachmentBehavior] {
-        let indexPaths = animator.behaviors
-            .flatMap { (($0 as? UIAttachmentBehavior)?.items.first as? UICollectionViewLayoutAttributes)?.indexPath }
-        return attributes
-            .flatMap {
-                return indexPaths.contains($0.indexPath)
-                    ? nil
-                    : UIAttachmentBehavior(item: $0, attachedToAnchor: $0.center)
-        }
+        let indexPaths = animator.behaviors.flatMap { (($0 as? UIAttachmentBehavior)?.items.first as? UICollectionViewLayoutAttributes)?.indexPath }
+        return attributes.flatMap { return indexPaths.contains($0.indexPath) ? nil : UIAttachmentBehavior(item: $0, attachedToAnchor: $0.center) }
     }
     
     public override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
@@ -53,8 +41,7 @@ public class BouncyLayout: UICollectionViewFlowLayout {
         guard let view = collectionView else { return false }
         
         animator.behaviors.forEach {
-            guard let behavior = $0 as? UIAttachmentBehavior,
-                let item = behavior.items.first else { return }
+            guard let behavior = $0 as? UIAttachmentBehavior, let item = behavior.items.first else { return }
             update(behavior: behavior, and: item, in: view, for: newBounds)
             animator.updateItem(usingCurrentState: item)
         }
@@ -62,15 +49,9 @@ public class BouncyLayout: UICollectionViewFlowLayout {
     }
     
     private func update(behavior: UIAttachmentBehavior, and item: UIDynamicItem, in view: UICollectionView, for bounds: CGRect) {
-        let delta = CGVector(dx: bounds.origin.x - view.bounds.origin.x,
-                             dy: bounds.origin.y - view.bounds.origin.y)
-        let resistance = CGVector(dx: fabs(view.panGestureRecognizer.location(in: view).x - behavior.anchorPoint.x) / 1000,
-                                  dy: fabs(view.panGestureRecognizer.location(in: view).y - behavior.anchorPoint.y) / 1000)
-        item.center.y += delta.dy < 0
-            ? max(delta.dy, delta.dy * resistance.dy)
-            : min(delta.dy, delta.dy * resistance.dy)
-        item.center.x += delta.dx < 0
-            ? max(delta.dx, delta.dx * resistance.dx)
-            : min(delta.dx, delta.dx * resistance.dx)
+        let delta = CGVector(dx: bounds.origin.x - view.bounds.origin.x, dy: bounds.origin.y - view.bounds.origin.y)
+        let resistance = CGVector(dx: fabs(view.panGestureRecognizer.location(in: view).x - behavior.anchorPoint.x) / 1000, dy: fabs(view.panGestureRecognizer.location(in: view).y - behavior.anchorPoint.y) / 1000)
+        item.center.y += delta.dy < 0 ? max(delta.dy, delta.dy * resistance.dy) : min(delta.dy, delta.dy * resistance.dy)
+        item.center.x += delta.dx < 0 ? max(delta.dx, delta.dx * resistance.dx) : min(delta.dx, delta.dx * resistance.dx)
     }
 }
