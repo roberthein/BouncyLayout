@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         }
     }
     
-    lazy var layout = BouncyLayout()
+    lazy var layout = BouncyLayout(style: .regular)
     
     lazy var collectionView: UICollectionView = {
         
