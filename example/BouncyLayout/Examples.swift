@@ -22,13 +22,21 @@ enum Example {
 
 class Examples: UITableViewController {
     
-    let examples: [Example] = [.chatMessage, .photosCollection, .barGraph]
+    let examples: [Example] = [.barGraph, .photosCollection, .chatMessage]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Examples"
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if #available(iOS 11.0, *) {
+            navigationController?.navigationBar.prefersLargeTitles = true
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
