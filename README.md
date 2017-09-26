@@ -1,10 +1,7 @@
 ![](art/header.png)
-
-**tl;dr** *Make. It. Bounce.*
+![](art/gifs/01.gif)![](art/gifs/02.gif)![](art/gifs/03.gif)
 
 **BouncyLayout** is a collection view layout that makes your cells bounce.
-
-![](art/gifs/01.gif)![](art/gifs/02.gif)![](art/gifs/03.gif)
 
 ## Features
 
