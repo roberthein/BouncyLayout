@@ -63,8 +63,8 @@ public class BouncyLayout: UICollectionViewFlowLayout {
         let indexPaths = animator.behaviors.flatMap { (($0 as? UIAttachmentBehavior)?.items.first as? UICollectionViewLayoutAttributes)?.indexPath }
         return attributes.flatMap {
             var center = $0.center
-            center.x = CGFloat(floor($0.center.x))
-            center.y = CGFloat(floor($0.center.y))
+            center.x = floor($0.center.x)
+            center.y = floor($0.center.y)
             return indexPaths.contains($0.indexPath) ? nil : UIAttachmentBehavior(item: $0, attachedToAnchor: center)
         }
     }
@@ -95,12 +95,12 @@ public class BouncyLayout: UICollectionViewFlowLayout {
         switch scrollDirection {
         case .horizontal:
             item.center.x += delta.dx < 0 ? max(delta.dx, delta.dx * resistance.dx) : min(delta.dx, delta.dx * resistance.dx)
-            item.center.y = CGFloat(floor(item.center.y))
-            item.center.x = CGFloat(floor(item.center.x))
+            item.center.y = floor(item.center.y)
+            item.center.x = floor(item.center.x)
         case .vertical:
             item.center.y += delta.dy < 0 ? max(delta.dy, delta.dy * resistance.dy) : min(delta.dy, delta.dy * resistance.dy)
-            item.center.y = CGFloat(floor(item.center.y))
-            item.center.x = CGFloat(floor(item.center.x))
+            item.center.y = floor(item.center.y)
+            item.center.x = floor(item.center.x)
         }
     }
 }
