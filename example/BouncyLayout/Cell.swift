@@ -4,14 +4,23 @@ enum CellStyle {
     case blue
     case gray
     
-    var color: UIColor {
+    func color(for example: Example) -> UIColor {
+        
         switch self {
-        case .blue: return UIColor(red: 61/255, green: 131/255, blue: 246/255, alpha: 1)
-        case .gray: return UIColor(red: 229/255, green: 229/255, blue: 229/255, alpha: 1)
+        case .blue:
+            return UIColor.white.withAlphaComponent(1)
+//            switch example {
+//            case .chatMessage: return UIColor(red: 0/255, green: 98/255, blue: 239/255, alpha: 1)
+//            case .photosCollection: return UIColor(red: 0/255, green: 208/255, blue: 166/255, alpha: 1)
+//            case .barGraph: return UIColor(red: 0/255, green: 153/255, blue: 202/255, alpha: 1)
+//            }
+        case .gray:
+            return UIColor.white.withAlphaComponent(0.7)
+//            return UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1)
         }
     }
     
-    func insetsFor(_ example: Example) -> UIEdgeInsets {
+    func insets(for example: Example) -> UIEdgeInsets {
         switch example {
         case .chatMessage: return UIEdgeInsets(top: 5, left: self == .blue ? 80 : 5, bottom: -5, right: self == .blue ? -5 : -80)
         case .photosCollection: return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
@@ -30,8 +39,8 @@ class Cell: UICollectionViewCell {
     lazy var right: NSLayoutConstraint = self.background.rightAnchor.constraint(equalTo: self.contentView.rightAnchor)
     
     func setCell(style: CellStyle, example: Example) {
-        background.backgroundColor = style.color
-        let insets = style.insetsFor(example)
+        background.backgroundColor = style.color(for: example)
+        let insets = style.insets(for: example)
         
         top.constant = insets.top
         left.constant = insets.left
@@ -43,17 +52,8 @@ class Cell: UICollectionViewCell {
     lazy var background: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.layer.cornerRadius = 35 / 2
+        view.layer.cornerRadius = 15
         view.clipsToBounds = true
-        
-        return view
-    }()
-    
-    lazy var label: UILabel = {
-        let view = UILabel()
-        view.translatesAutoresizingMaskIntoConstraints = false
-//        view.layer.cornerRadius = 35 / 2
-//        view.clipsToBounds = true
         
         return view
     }()
@@ -67,14 +67,8 @@ class Cell: UICollectionViewCell {
         
         contentView.backgroundColor = nil
         contentView.addSubview(background)
-        contentView.addSubview(label)
         
-        NSLayoutConstraint.activate([top, left, bottom, right,
-                                     label.topAnchor.constraint(equalTo: contentView.topAnchor),
-                                     label.leftAnchor.constraint(equalTo: contentView.leftAnchor),
-                                     label.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-                                     label.rightAnchor.constraint(equalTo: contentView.rightAnchor),
-                                     ])
+        NSLayoutConstraint.activate([top, left, bottom, right])
         
         
     }
