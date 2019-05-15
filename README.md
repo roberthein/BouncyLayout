@@ -4,9 +4,9 @@
 ![](art/header.png)
 
 <p float="center">
- 	<img src="https://github.com/roberthein/BouncyLayout/blob/master/art/gifs/01.gif" width="250">
-	<img src="https://github.com/roberthein/BouncyLayout/blob/master/art/gifs/02.gif" width="250">
-	<img src="https://github.com/roberthein/BouncyLayout/blob/master/art/gifs/03.gif" width="250">
+ 	<img src="https://github.com/roberthein/BouncyLayout/blob/master/art/gifs/01.gif" width="270">
+	<img src="https://github.com/roberthein/BouncyLayout/blob/master/art/gifs/02.gif" width="270">
+	<img src="https://github.com/roberthein/BouncyLayout/blob/master/art/gifs/03.gif" width="270">
 </p>
 
 **BouncyLayout** is a collection view layout that makes your cells bounce.
