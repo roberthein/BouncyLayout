@@ -1,6 +1,14 @@
 ![](art/header.png)
 ![](art/gifs/01.gif)![](art/gifs/02.gif)![](art/gifs/03.gif)
 
+![](art/header.png)
+
+<p float="left">
+ 	<img src="https://github.com/roberthein/BouncyLayout/blob/master/art/gifs/01.gif" width="250">
+	<img src="https://github.com/roberthein/BouncyLayout/blob/master/art/gifs/02.gif" width="250">
+	<img src="https://github.com/roberthein/BouncyLayout/blob/master/art/gifs/03.gif" width="250">
+</p>
+
 **BouncyLayout** is a collection view layout that makes your cells bounce.
 
 ## Features
