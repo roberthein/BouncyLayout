@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A9BB8AFB1EB45C760093FE72"
-               BuildableName = "BouncyLayout.framework"
-               BlueprintName = "BouncyLayout"
-               ReferencedContainer = "container:BouncyLayout.xcodeproj">
+               BlueprintIdentifier = "A9E842A51EABBCC300A9192A"
+               BuildableName = "BouncyLayout_Example.app"
+               BlueprintName = "BouncyLayout_Example"
+               ReferencedContainer = "container:BouncyLayout_Example.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,15 +40,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A9BB8AFB1EB45C760093FE72"
-            BuildableName = "BouncyLayout.framework"
-            BlueprintName = "BouncyLayout"
-            ReferencedContainer = "container:BouncyLayout.xcodeproj">
+            BlueprintIdentifier = "A9E842A51EABBCC300A9192A"
+            BuildableName = "BouncyLayout_Example.app"
+            BlueprintName = "BouncyLayout_Example"
+            ReferencedContainer = "container:BouncyLayout_Example.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -56,15 +57,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A9BB8AFB1EB45C760093FE72"
-            BuildableName = "BouncyLayout.framework"
-            BlueprintName = "BouncyLayout"
-            ReferencedContainer = "container:BouncyLayout.xcodeproj">
+            BlueprintIdentifier = "A9E842A51EABBCC300A9192A"
+            BuildableName = "BouncyLayout_Example.app"
+            BlueprintName = "BouncyLayout_Example"
+            ReferencedContainer = "container:BouncyLayout_Example.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

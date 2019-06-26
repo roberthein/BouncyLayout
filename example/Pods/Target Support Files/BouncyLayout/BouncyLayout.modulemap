@@ -1,0 +1,6 @@
+framework module BouncyLayout {
+  umbrella header "BouncyLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}

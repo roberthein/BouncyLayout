@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C2607285ADCE64E89298A87 /* Pods_BouncyLayout_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D086BBA4F8B0C6989E173B9E /* Pods_BouncyLayout_Example.framework */; };
 		A9E842AA1EABBCC300A9192A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E842A91EABBCC300A9192A /* AppDelegate.swift */; };
 		A9E842AC1EABBCC300A9192A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E842AB1EABBCC300A9192A /* ViewController.swift */; };
 		A9E842B11EABBCC300A9192A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9E842B01EABBCC300A9192A /* Assets.xcassets */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36DB3627620EFD28902560C0 /* Pods-BouncyLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BouncyLayout_Example.release.xcconfig"; path = "Target Support Files/Pods-BouncyLayout_Example/Pods-BouncyLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
+		983B6E811B3733B23A7ECBC0 /* Pods-BouncyLayout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BouncyLayout_Example.debug.xcconfig"; path = "Target Support Files/Pods-BouncyLayout_Example/Pods-BouncyLayout_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A9E842A61EABBCC300A9192A /* BouncyLayout_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BouncyLayout_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E842A91EABBCC300A9192A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9E842AB1EABBCC300A9192A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		A9E842B51EABBCC300A9192A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9E842BD1EABC05B00A9192A /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		A9EF33B71EABDBBD008B1B65 /* Examples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Examples.swift; sourceTree = "<group>"; };
+		D086BBA4F8B0C6989E173B9E /* Pods_BouncyLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BouncyLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C2607285ADCE64E89298A87 /* Pods_BouncyLayout_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D694D7C4BABF1108B6E6AB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				983B6E811B3733B23A7ECBC0 /* Pods-BouncyLayout_Example.debug.xcconfig */,
+				36DB3627620EFD28902560C0 /* Pods-BouncyLayout_Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A9E8429D1EABBCC300A9192A = {
 			isa = PBXGroup;
 			children = (
 				A9E842A81EABBCC300A9192A /* BouncyLayout */,
 				A9E842A71EABBCC300A9192A /* Products */,
+				8D694D7C4BABF1108B6E6AB0 /* Pods */,
+				E531D45248D28C30DEDF9184 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = BouncyLayout;
 			sourceTree = "<group>";
 		};
+		E531D45248D28C30DEDF9184 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D086BBA4F8B0C6989E173B9E /* Pods_BouncyLayout_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9E842B81EABBCC300A9192A /* Build configuration list for PBXNativeTarget "BouncyLayout_Example" */;
 			buildPhases = (
+				1037C284A5BF10998554188F /* [CP] Check Pods Manifest.lock */,
 				A9E842A21EABBCC300A9192A /* Sources */,
 				A9E842A31EABBCC300A9192A /* Frameworks */,
 				A9E842A41EABBCC300A9192A /* Resources */,
+				B5D568C09C8F3CCA5881E54D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -100,14 +126,14 @@
 					A9E842A51EABBCC300A9192A = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 29X3GG489T;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1100;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = A9E842A11EABBCC300A9192A /* Build configuration list for PBXProject "BouncyLayout_Example" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -134,6 +160,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1037C284A5BF10998554188F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BouncyLayout_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5D568C09C8F3CCA5881E54D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BouncyLayout_Example/Pods-BouncyLayout_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BouncyLayout/BouncyLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BouncyLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BouncyLayout_Example/Pods-BouncyLayout_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9E842A21EABBCC300A9192A /* Sources */ = {
@@ -274,6 +343,7 @@
 		};
 		A9E842B91EABBCC300A9192A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 983B6E811B3733B23A7ECBC0 /* Pods-BouncyLayout_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 29X3GG489T;
@@ -282,13 +352,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bouncylayout.BouncyLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		A9E842BA1EABBCC300A9192A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36DB3627620EFD28902560C0 /* Pods-BouncyLayout_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 29X3GG489T;
@@ -297,7 +368,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bouncylayout.BouncyLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

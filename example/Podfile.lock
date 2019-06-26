@@ -1,0 +1,16 @@
+PODS:
+  - BouncyLayout (2.2.0)
+
+DEPENDENCIES:
+  - BouncyLayout (from `../`)
+
+EXTERNAL SOURCES:
+  BouncyLayout:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BouncyLayout: b8be605d6c729086d0fc83f180f71e804abeaf04
+
+PODFILE CHECKSUM: d599cf110501675264d1f796a84006c8427c5898
+
+COCOAPODS: 1.7.2

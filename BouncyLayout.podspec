@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'BouncyLayout'
-  s.version      = '2.1.0'
+  s.version      = '2.2.0'
   s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '9.0'
   s.summary      = 'Make. It. Bounce.'
@@ -13,4 +13,5 @@ Pod::Spec.new do |s|
   s.social_media_url   = 'https://twitter.com/roberthein'
   s.source             = { :git => 'https://github.com/roberthein/BouncyLayout.git', :tag => s.version.to_s }
   s.source_files       = 'BouncyLayout/Classes/**/*.{swift}'
+  s.swift_version      = '5.0'
 end
