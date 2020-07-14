@@ -10,7 +10,7 @@
 
 ## Features
 
-- [X] Pure Swift 4.
+- [X] Pure Swift 5.
 - [X] Works with every `UICollectionView`.
 - [X] Horizontal and vertical scrolling support.
 - [X] Configurable bounce effect.
