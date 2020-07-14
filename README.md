@@ -50,6 +50,14 @@ it, simply add the following line to your Cartfile:
 github "roberthein/BouncyLayout"
 ```
 
+### Swift Package Manager
+
+BouncyLayout is available through [Swift Package Manager](https://swift.org/package-manager/). To install
+it, in Xcode 11.0 or later select `File` > `Swift Packages` > `Add Package Dependency...` and add BouncyLayout repository URL:
+```
+https://github.com/roberthein/BouncyLayout.git
+```
+
 ## Suggestions or feedback?
 
 Feel free to create a pull request, open an issue or find me [on Twitter](https://twitter.com/roberthein).
