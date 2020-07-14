@@ -14,6 +14,7 @@
 - [X] Works with every `UICollectionView`.
 - [X] Horizontal and vertical scrolling support.
 - [X] Configurable bounce effect.
+- [X] Supports cell size changes
 
 ## Setup
 The only you thing you need to do is import `BouncyLayout`, create an instance and add it to your `UICollectionView`.

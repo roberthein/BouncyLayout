@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'BouncyLayout'
-  s.version      = '2.2.0'
+  s.version      = '2.3.0'
   s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '9.0'
   s.summary      = 'Make. It. Bounce.'
