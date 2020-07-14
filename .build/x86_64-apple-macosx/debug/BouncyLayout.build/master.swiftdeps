@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "891725a0fd2ff8fa9da01e67db1e2be8"
+build_time: [1594751635, 709548000]
+inputs:
+  "/Users/roberthein/git/BouncyLayout/BouncyLayout/Classes/BouncyLayout.swift": !dirty [1594749079, 408560208]

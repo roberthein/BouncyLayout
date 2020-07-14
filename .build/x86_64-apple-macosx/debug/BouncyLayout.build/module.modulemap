@@ -1,0 +1,4 @@
+module BouncyLayout {
+    header "/Users/roberthein/git/BouncyLayout/.build/x86_64-apple-macosx/debug/BouncyLayout.build/BouncyLayout-Swift.h"
+    requires objc
+}

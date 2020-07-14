@@ -1,0 +1,212 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "BouncyLayout"
+provides-nominal:
+- "12BouncyLayoutAAC"
+- "12BouncyLayoutAAC11BounceStyleO"
+provides-member:
+- ["12BouncyLayoutAAC", ""]
+- ["12BouncyLayoutAAC11BounceStyleO", ""]
+provides-dynamic-lookup:
+- "$__lazy_storage_$_animator"
+- "VIEWPORT_BUFFER"
+- "addItem"
+- "animator"
+- "damping"
+- "frequency"
+- "layoutAttributesForElements"
+- "layoutAttributesForItem"
+- "prepare"
+- "shouldInvalidateLayout"
+- "update"
+- "visibleIndexPaths"
+- "visibleItemsSizeCache"
+depends-top-level:
+- !private "*"
+- !private "+="
+- !private "-"
+- !private "/"
+- !private "<"
+- "=="
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "BouncyLayout"
+- "CGFloat"
+- "CGPoint"
+- "CGRect"
+- "CGSize"
+- !private "CGVector"
+- "CastingPrecedence"
+- "FloatLiteralType"
+- "IndexPath"
+- !private "IntegerLiteralType"
+- "Set"
+- "TernaryPrecedence"
+- "UIAttachmentBehavior"
+- "UICollectionView"
+- "UICollectionViewFlowLayout"
+- "UICollectionViewLayoutAttributes"
+- "UIDynamicAnimator"
+- "UIDynamicItem"
+- !private "abs"
+- !private "collectionView"
+- !private "floor"
+- !private "max"
+- !private "min"
+- !private "scrollDirection"
+depends-member:
+- ["12BouncyLayoutAAC11BounceStyleO", "=="]
+- ["12BouncyLayoutAAC11BounceStyleO", "CGFloat"]
+- ["12BouncyLayoutAAC11BounceStyleO", "__derived_enum_equals"]
+- ["12BouncyLayoutAAC11BounceStyleO", "_rawHashValue"]
+- ["12BouncyLayoutAAC11BounceStyleO", "damping"]
+- ["12BouncyLayoutAAC11BounceStyleO", "deinit"]
+- ["12BouncyLayoutAAC11BounceStyleO", "frequency"]
+- ["12BouncyLayoutAAC11BounceStyleO", "hash"]
+- ["12BouncyLayoutAAC11BounceStyleO", "hashValue"]
+- ["12BouncyLayoutAAC11BounceStyleO", "prominent"]
+- ["12BouncyLayoutAAC11BounceStyleO", "regular"]
+- ["12BouncyLayoutAAC11BounceStyleO", "subtle"]
+- ["12BouncyLayoutAAC", "Bool"]
+- ["12BouncyLayoutAAC", "BounceStyle"]
+- ["12BouncyLayoutAAC", "CGFloat"]
+- ["12BouncyLayoutAAC", "CGRect"]
+- ["12BouncyLayoutAAC", "CGSize"]
+- !private ["12BouncyLayoutAAC", "CGVector"]
+- ["12BouncyLayoutAAC", "IndexPath"]
+- ["12BouncyLayoutAAC", "Set"]
+- ["12BouncyLayoutAAC", "UIAttachmentBehavior"]
+- ["12BouncyLayoutAAC", "UICollectionView"]
+- ["12BouncyLayoutAAC", "UICollectionViewLayoutAttributes"]
+- ["12BouncyLayoutAAC", "UIDynamicAnimator"]
+- ["12BouncyLayoutAAC", "UIDynamicItem"]
+- !private ["12BouncyLayoutAAC", "VIEWPORT_BUFFER"]
+- !private ["12BouncyLayoutAAC", "abs"]
+- !private ["12BouncyLayoutAAC", "addItem"]
+- !private ["12BouncyLayoutAAC", "animator"]
+- !private ["12BouncyLayoutAAC", "collectionView"]
+- !private ["12BouncyLayoutAAC", "damping"]
+- ["12BouncyLayoutAAC", "deinit"]
+- !private ["12BouncyLayoutAAC", "floor"]
+- !private ["12BouncyLayoutAAC", "frequency"]
+- ["12BouncyLayoutAAC", "init"]
+- !private ["12BouncyLayoutAAC", "max"]
+- !private ["12BouncyLayoutAAC", "min"]
+- ["12BouncyLayoutAAC", "prepare"]
+- !private ["12BouncyLayoutAAC", "scrollDirection"]
+- ["12BouncyLayoutAAC", "shouldInvalidateLayout"]
+- !private ["12BouncyLayoutAAC", "visibleIndexPaths"]
+- !private ["12BouncyLayoutAAC", "visibleItemsSizeCache"]
+- !private ["So7CGPointV", "init"]
+- !private ["So7CGPointV", "x"]
+- !private ["So7CGPointV", "y"]
+- !private ["So6CGRectV", "origin"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "insert"]
+- ["Sl", "init"]
+- !private ["Sl", "insert"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "insert"]
+- !private ["s28CustomDebugStringConvertibleP", "origin"]
+- !private ["s28CustomDebugStringConvertibleP", "x"]
+- !private ["s28CustomDebugStringConvertibleP", "y"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "insert"]
+- !private ["s17CustomReflectableP", "origin"]
+- !private ["s17CustomReflectableP", "x"]
+- !private ["s17CustomReflectableP", "y"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "insert"]
+- ["Se", "init"]
+- !private ["Se", "insert"]
+- !private ["Se", "origin"]
+- !private ["Se", "x"]
+- !private ["Se", "y"]
+- ["SE", "init"]
+- !private ["SE", "insert"]
+- !private ["SE", "origin"]
+- !private ["SE", "x"]
+- !private ["SE", "y"]
+- ["SQ", "=="]
+- ["SQ", ""]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "damping"]
+- ["SQ", "frequency"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- !private ["SQ", "insert"]
+- !private ["SQ", "origin"]
+- ["SQ", "prominent"]
+- ["SQ", "regular"]
+- ["SQ", "subtle"]
+- !private ["SQ", "x"]
+- !private ["SQ", "y"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "insert"]
+- ["SH", "=="]
+- ["SH", ""]
+- ["SH", "_rawHashValue"]
+- ["SH", "damping"]
+- ["SH", "frequency"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- !private ["SH", "insert"]
+- ["SH", "prominent"]
+- ["SH", "regular"]
+- ["SH", "subtle"]
+- !private ["s6HasherV", "combine"]
+- ["ST", "init"]
+- !private ["ST", "insert"]
+- ["Sh", "init"]
+- !private ["Sh", "insert"]
+- ["s10SetAlgebraP", "init"]
+- !private ["s10SetAlgebraP", "insert"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "origin"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "x"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "y"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "insert"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "insert"]
+- !private ["s21_ObjectiveCBridgeableP", "origin"]
+- !private ["s21_ObjectiveCBridgeableP", "x"]
+- !private ["s21_ObjectiveCBridgeableP", "y"]
+depends-nominal:
+- "12BouncyLayoutAAC11BounceStyleO"
+- "12BouncyLayoutAAC"
+- !private "So7CGPointV"
+- !private "So6CGRectV"
+- "s7CVarArgP"
+- "Sl"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- "SE"
+- "SQ"
+- "s25ExpressibleByArrayLiteralP"
+- "SH"
+- !private "s6HasherV"
+- "ST"
+- "Sh"
+- "s10SetAlgebraP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/roberthein/git/BouncyLayout/.build/x86_64-apple-macosx/debug/BouncyLayout.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "321bd75835b9c09f9354cb7e332d790d"

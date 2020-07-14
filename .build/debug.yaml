@@ -1,0 +1,41 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "BouncyLayout-debug.module": ["<BouncyLayout-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<BouncyLayout-debug.module>"]
+  "test": ["<BouncyLayout-debug.module>"]
+default: "main"
+nodes:
+  "/Users/roberthein/git/BouncyLayout/BouncyLayout/":
+    is-directory-structure: true
+commands:
+  "<BouncyLayout-debug.module>":
+    tool: phony
+    inputs: ["/Users/roberthein/git/BouncyLayout/.build/x86_64-apple-macosx/debug/BouncyLayout.build/Classes/BouncyLayout.swift.o","/Users/roberthein/git/BouncyLayout/.build/x86_64-apple-macosx/debug/BouncyLayout.swiftmodule"]
+    outputs: ["<BouncyLayout-debug.module>"]
+
+  "C.BouncyLayout-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/roberthein/git/BouncyLayout/BouncyLayout/Classes/BouncyLayout.swift"]
+    outputs: ["/Users/roberthein/git/BouncyLayout/.build/x86_64-apple-macosx/debug/BouncyLayout.build/Classes/BouncyLayout.swift.o","/Users/roberthein/git/BouncyLayout/.build/x86_64-apple-macosx/debug/BouncyLayout.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "BouncyLayout"
+    module-output-path: "/Users/roberthein/git/BouncyLayout/.build/x86_64-apple-macosx/debug/BouncyLayout.swiftmodule"
+    import-paths: ["/Users/roberthein/git/BouncyLayout/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/roberthein/git/BouncyLayout/.build/x86_64-apple-macosx/debug/BouncyLayout.build"
+    objects: ["/Users/roberthein/git/BouncyLayout/.build/x86_64-apple-macosx/debug/BouncyLayout.build/Classes/BouncyLayout.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/roberthein/git/BouncyLayout/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j4","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/roberthein/git/BouncyLayout/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-emit-objc-header","-emit-objc-header-path","/Users/roberthein/git/BouncyLayout/.build/x86_64-apple-macosx/debug/BouncyLayout.build/BouncyLayout-Swift.h","-color-diagnostics"]
+    sources: ["/Users/roberthein/git/BouncyLayout/BouncyLayout/Classes/BouncyLayout.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 4
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/roberthein/git/BouncyLayout/BouncyLayout/","/Users/roberthein/git/BouncyLayout/Package.swift","/Users/roberthein/git/BouncyLayout/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

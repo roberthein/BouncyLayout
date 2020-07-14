@@ -1,0 +1,20 @@
+{
+  "allExecutables" : [
+
+  ],
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "rootExecutables" : [
+
+  ],
+  "swiftTargetMap" : {
+    "C.BouncyLayout-debug.module" : "BouncyLayout"
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}

@@ -1,0 +1,24 @@
+---
+path:            '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule'
+dependencies:
+  - mtime:           1587778394000000000
+    path:            '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule'
+    size:            16968
+  - mtime:           1582956726000000000
+    path:            'usr/include/Darwin.apinotes'
+    size:            1133
+    sdk_relative:    true
+  - mtime:           1582411723000000000
+    path:            'usr/include/objc/ObjectiveC.apinotes'
+    size:            11147
+    sdk_relative:    true
+  - mtime:           1582958197000000000
+    path:            'usr/include/xpc/XPC.apinotes'
+    size:            123
+    sdk_relative:    true
+  - mtime:           1583127991000000000
+    path:            'usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface'
+    size:            1814
+    sdk_relative:    true
+version:         1
+...

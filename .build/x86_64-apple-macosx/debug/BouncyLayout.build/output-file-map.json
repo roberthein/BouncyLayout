@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/roberthein/git/BouncyLayout/.build/x86_64-apple-macosx/debug/BouncyLayout.build/master.swiftdeps"
+  },
+  "/Users/roberthein/git/BouncyLayout/BouncyLayout/Classes/BouncyLayout.swift": {
+    "dependencies": "/Users/roberthein/git/BouncyLayout/.build/x86_64-apple-macosx/debug/BouncyLayout.build/Classes/BouncyLayout.d",
+    "object": "/Users/roberthein/git/BouncyLayout/.build/x86_64-apple-macosx/debug/BouncyLayout.build/Classes/BouncyLayout.swift.o",
+    "swiftmodule": "/Users/roberthein/git/BouncyLayout/.build/x86_64-apple-macosx/debug/BouncyLayout.build/Classes/BouncyLayout~partial.swiftmodule",
+    "swift-dependencies": "/Users/roberthein/git/BouncyLayout/.build/x86_64-apple-macosx/debug/BouncyLayout.build/Classes/BouncyLayout.swiftdeps"
+  }
+}
