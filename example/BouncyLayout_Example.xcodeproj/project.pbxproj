@@ -125,7 +125,7 @@
 				TargetAttributes = {
 					A9E842A51EABBCC300A9192A = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 29X3GG489T;
+						DevelopmentTeam = AP62F24ZLQ;
 						LastSwiftMigration = 1100;
 						ProvisioningStyle = Automatic;
 					};
@@ -346,7 +346,7 @@
 			baseConfigurationReference = 983B6E811B3733B23A7ECBC0 /* Pods-BouncyLayout_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 29X3GG489T;
+				DEVELOPMENT_TEAM = AP62F24ZLQ;
 				INFOPLIST_FILE = BouncyLayout/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -362,7 +362,7 @@
 			baseConfigurationReference = 36DB3627620EFD28902560C0 /* Pods-BouncyLayout_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 29X3GG489T;
+				DEVELOPMENT_TEAM = AP62F24ZLQ;
 				INFOPLIST_FILE = BouncyLayout/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
